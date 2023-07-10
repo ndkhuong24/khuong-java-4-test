@@ -9,7 +9,7 @@ import repository.ViecCanLamRepository;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "ViecCanLamServlet", value = {"/viec-can-lam/hien-thi"})
+@WebServlet(name = "ViecCanLamServlet", value = {"/viec-can-lam/hien-thi","/viec-can-lam/them-moi"})
 public class ViecCanLamServlet extends HttpServlet {
     private ViecCanLamRepository viecCanLamRepository = new ViecCanLamRepository();
 
