@@ -29,12 +29,8 @@ public class DbMetadata {
         CONNECT_STRING = connectStringBuilder.toString();
     }
 
+
     public static String getConnectString() {
         return CONNECT_STRING;
-    }
-
-    public static void main(String[] args) {
-        System.out.println("Thanh cong");
-        System.out.println(getConnectString());
     }
 }
