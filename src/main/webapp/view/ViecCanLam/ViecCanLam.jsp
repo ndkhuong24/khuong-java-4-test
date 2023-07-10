@@ -33,7 +33,10 @@
             <td>${vcl.maCongViec}</td>
             <td>${vcl.tenCongViec}</td>
             <td>${vcl.ngayLam}</td>
-            <td>${vcl.daXong}</td>
+            <td>
+                <c:if test="${vcl.daXong==1}">Đã xong</c:if>
+                <c:if test="${vcl.daXong==0}">Đang làm</c:if>
+            </td>
             <td>${vcl.tienDo}</td>
         </tr>
     </c:forEach>
