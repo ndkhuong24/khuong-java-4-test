@@ -16,16 +16,20 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-<form action="/viec-can-lam/them-moi" method="post">
-    <div class="form-floating mb-3 mt-3">
-        <input type="text" class="form-control" placeholder="Enter tên công việc" name="tenCongViec">
-        <label>Tên việc cần làm</label>
+<form action="/viec-can-lam/them-moi" method="post" class="container">
+    <div class="mb-3 mt-3">
+        <label class="form-label">Tên việc cần làm:</label>
+        <input type="text" class="form-control" name="tenCongViec">
     </div>
-    <div class="form-floating mt-3 mb-3">
-        <input type="date" class="form-control" placeholder="Enter ngày làm" name="ngayLam">
-        <label>Ngày làm</label>
+    <div class="mb-3 mt-3">
+        <label class="form-label">Ngày làm:</label>
+        <input type="date" class="form-control" name="ngayLam">
     </div>
-    <button type="submit" class="btn btn-primary">Thêm mới</button>
+    <div class="mb-3 mt-3">
+        <label class="form-label">Tiền đồ:</label>
+        <input class="form-control" name="tienDo" type="text">
+    </div>
+    <button type="submit" class="btn btn-secondary">Thêm mới</button>
 </form>
 </body>
 </html>
