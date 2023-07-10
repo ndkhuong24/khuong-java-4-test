@@ -21,7 +21,7 @@ public class HibernateUtil {
         properties.put(Environment.DRIVER, "com.microsoft.sqlserver.jdbc.SQLServerDriver");
         properties.put(Environment.URL, DbMetadata.getConnectString());
         properties.put(Environment.SHOW_SQL, "true"); // Hiển thị câu lệnh SQL thực hiện
-        properties.put(Environment.HBM2DDL_AUTO, "create"); // tự động sinh db
+//        properties.put(Environment.HBM2DDL_AUTO, "create"); // tự động sinh db
 
         conf.setProperties(properties);
         conf.addAnnotatedClass(ViecCanLam.class);
