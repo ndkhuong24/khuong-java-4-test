@@ -18,6 +18,12 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="container">
+    <button class="btn btn-secondary">
+        <a style="color: white;text-decoration: none" href="/viec-can-lam/them-moi">Thêm mới</a>
+    </button>
+</div>
+<br/>
 <table class="table container">
     <thead>
     <tr>
