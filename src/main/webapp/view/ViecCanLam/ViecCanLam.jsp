@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%--
   Created by IntelliJ IDEA.
   User: kn134
@@ -25,6 +26,7 @@
         <th scope="col">Ngày làm</th>
         <th scope="col">Đã xong</th>
         <th scope="col">Tiền đồ</th>
+        <th scope="col">Action</th>
     </tr>
     </thead>
     <tbody>
@@ -32,10 +34,12 @@
         <tr>
             <td>${vcl.maCongViec}</td>
             <td>${vcl.tenCongViec}</td>
-            <td>${vcl.ngayLam}</td>
             <td>
-                <c:if test="${vcl.daXong==1}">Đã xong</c:if>
-                <c:if test="${vcl.daXong==0}">Đang làm</c:if>
+                <fmt:formatDate pattern="dd-MM-yyyy" value="${vcl.ngayLam}"/>
+            </td>
+            <td>
+                <c:if test="${vcl.daXong == true}">Đã xong</c:if>
+                <c:if test="${vcl.daXong == false}">Đang làm</c:if>
             </td>
             <td>${vcl.tienDo}</td>
         </tr>
